@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="encabezado">
+            <img src="img/Vector.png" class="imagen-encabezado">
+            <h1 class="titulo">ENCRIPTADOR</h1>
+        </div>
+    </header>
+    <main>
+        <div class="entrada">
+            <textarea cols="125" rows="11" class="ingreso" required
+                placeholder="Ingresa el texto a encriptar" id="texto-usuario"></textarea>
+            
+        </div>
+
+
+        <div class="salida">
+            
+            <img src="img/Muñeco.png" class="imagen" id="muneco">
+            <p class="texto-salida" id="aviso">Todavia no has escrito nada</p>
+        </div>
+
+        <div class="botones-entrada">
+            <button class="boton" onclick="recorrerYEncriptar()">ENCRIPTAR</button>
+            <button class="boton" onclick="descencriptar()">DESCENCRIPTAR</button>
+        </div>
+
+        <div class="botones-salida">
+            <button class="boton" onclick="copiarAlPortapapeles()" >COPIAR</button>
+        </div>
+
+
+    </main>
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>

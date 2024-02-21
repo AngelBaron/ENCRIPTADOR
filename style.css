@@ -1,0 +1,212 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.encabezado{
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    
+}
+
+.imagen-encabezado{
+    margin: 10px 20px;
+    text-align: left;
+}
+
+h1{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: #5c6591 ;
+    width: 100%;
+    vertical-align: top;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+}
+
+.entrada{
+    display: inline-flex;
+    width: 50%;
+    margin: 10px 20px;
+    height: 50%;
+    position: static;
+}
+
+.ingreso{
+    resize: none;
+    border: none;
+    border-radius: 9px;
+    border-color: #F3F5FC;
+    font-family: "Open Sans", sans-serif;
+    font-size: xx-large;
+    background-color: #F3F5FC;
+    width: 100%;
+
+}
+
+
+
+
+.salida{
+    background-color: white;
+    width: 45%;
+    display: inline-flex;
+    height: 52%;
+    position: fixed;
+    justify-content: center;
+    border-radius: 9px;
+    min-width: 45%;
+    max-width: 45%;
+    overflow: hidden;
+}
+
+.texto-salida{
+    padding: 5px;
+    font-size: xx-large;
+    font-family: "Open Sans", sans-serif;
+    overflow: scroll; 
+    word-wrap: break-word;
+    
+}
+
+.texto-salida::-webkit-scrollbar{
+    width: 1px;
+}
+
+.imagen{
+    margin: 4em;
+    transform: scale(1);
+    position: absolute;
+    visibility: visible;
+    
+    
+}
+
+.botones-entrada{
+    width: 50%;
+    display: inline-block;
+    
+    
+}
+
+.botones-salida{
+    margin: 10px 20px;
+    padding: 0 25px;
+    width: 40%;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+.boton{
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 20px;
+    width: 30%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 120%;
+    border-radius: 5px;
+    border-color: #E9ECF8;
+    color: #E9ECF8;
+    background-color: #757FB2;
+    text-align: center;
+}
+
+.boton:hover{
+    transform: scale(1.2);
+    background-color: #5c6591;
+    transition: 600ms;
+}
+
+.boton:not(:hover) {
+    transform: scale(1);
+    background-color: #757FB2;
+    transition: 600ms;
+}
+
+
+@media  screen and (max-width:480px) {
+    h1{
+        font-size: 2em;
+    }
+    .entrada{
+        display: block;
+        width: auto;
+    }
+    .ingreso{
+        width: 100%;
+        font-size: 2em;
+        height: 10%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .botones-entrada {
+        width: 100%;
+        align-items: center;
+        display: block;
+        position: relative;
+        top: 0;
+        order: 1; /* Esto hará que botones-entrada se muestre después de salida */
+        text-align: center;
+    }
+    
+    .salida {
+        width: 90%;
+        
+        max-width: none;
+        min-width: 50%;
+        margin: 10px 20px;
+        position: relative;
+        z-index: 1;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px 10px #a8a7a7;
+        clear: both;
+        order: 2; /* Esto hará que salida se muestre antes de botones-entrada */
+    }
+    
+    .texto-salida{
+        font-size: 2em;
+    }
+
+
+    .boton{
+        font-size: 70%;
+        padding: 15px;
+        width: 50%;
+    }
+    .imagen{
+        display: none;
+    }
+
+    .boton:hover{
+        transform: none;
+    }
+
+    .botones-salida{
+        order: 3;
+        width: auto;
+    }
+}
+
+    @media screen and  (max-width: 940px) and (min-width: 481px){
+        
+
+        .botones-salida{
+            position: absolute;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
