@@ -35,10 +35,6 @@ function recorrerYEncriptar() {
                 console.log("se encontro un a");
                 arrayAnalizar.splice(i + 1, 0, "i");
                 i += 1;
-                /*
-                arrayAIncluir=['a','i'];
-                encriptar(1,i,arrayAIncluir);
-                */
                 break;
             case 'e':
                 console.log("se encontro un e");
@@ -174,24 +170,6 @@ function descencriptar() {
     document.getElementById("aviso").textContent = txtNoEncriptado;
     }
 }
-
-/*
-    function encriptar(adicion,inicio,incluir) {
-        let cantidadInicial = arrayAnalizar.length - 1 ;
-        arrayAnalizar.length = arrayAnalizar.length + adicion;
-        for (let i = arrayAnalizar.length-1; i > inicio; i--) {
-            arrayAnalizar[i]= arrayAnalizar[cantidadInicial];
-            cantidadInicial--;
-        }
-
-        let a=0;
-        for (let i = inicio; i <= cantidadInicial; i++) {
-                
-                arrayAnalizar[i]=incluir[a];
-                a++;
-            
-        }
-        */
 
 function noEscribio() {
     var elemento = document.getElementById("muneco");
