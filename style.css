@@ -53,7 +53,7 @@ h1{
     width: 45%;
     display: inline-flex;
     height: 52%;
-    position: fixed;
+    position: static;
     justify-content: center;
     border-radius: 9px;
     min-width: 45%;
